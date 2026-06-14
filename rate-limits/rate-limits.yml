@@ -1,0 +1,59 @@
+name: Filecoin API Rate Limits
+description: >
+  The Glif public Lotus node endpoints do not publish explicit numeric rate
+  limits. They are shared public infrastructure without guaranteed SLAs.
+  Under heavy load the public endpoints may throttle or return errors; teams
+  with production traffic requirements should request a dedicated node.
+  The Filecoin HTTP REST API and actor methods are node-local — limits depend
+  on the operator's Lotus configuration. Third-party RPC providers (Ankr,
+  Lava, NOWNodes) each apply their own plan-based limits.
+rateLimits:
+  - name: Glif Public Mainnet Endpoint
+    description: >
+      No published numeric rate limit. Shared public endpoint; may throttle
+      under sustained high request volumes. Intended for development and
+      low-to-moderate production traffic.
+    endpoint: https://api.node.glif.io/rpc/v1
+    limit: unspecified
+    period: unspecified
+    notes: >
+      Contact Glif (https://github.com/glifio) for dedicated nodes if public
+      endpoint throughput is insufficient.
+
+  - name: Glif Public Calibration Testnet Endpoint
+    description: >
+      Shared testnet endpoint for the Filecoin Calibration network. No
+      published rate limit. Suitable for development and CI workflows.
+    endpoint: https://api.calibration.node.glif.io/rpc/v1
+    limit: unspecified
+    period: unspecified
+
+  - name: Chain History Limit
+    description: >
+      Public Glif endpoints expose only the most recent 2 000 blocks
+      (~16.67 hours of mainnet history) due to lightweight-snapshot
+      constraints. Requests for older state will return errors.
+    endpoint: https://api.node.glif.io/rpc/v1
+    limit: 2000
+    unit: blocks
+    period: rolling
+
+  - name: Ankr Public RPC
+    description: >
+      Ankr provides a public Filecoin RPC at https://rpc.ankr.com/filecoin.
+      Free tier rate limits apply per their standard public RPC policy;
+      premium plans available for higher throughput.
+    endpoint: https://rpc.ankr.com/filecoin
+    limit: unspecified
+    period: unspecified
+    notes: See https://www.ankr.com/ for current plan limits.
+
+  - name: NOWNodes
+    description: >
+      NOWNodes Filecoin endpoint at https://fil.nownodes.io requires an API
+      key. Rate limits are plan-based and not publicly disclosed in Filecoin
+      documentation.
+    endpoint: https://fil.nownodes.io
+    limit: unspecified
+    period: unspecified
+    notes: Requires API key. See https://nownodes.io/ for plan details.

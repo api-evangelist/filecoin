@@ -1,0 +1,63 @@
+name: Filecoin API Plans
+description: >
+  Filecoin's public infrastructure is primarily free and permissionless.
+  The Glif-hosted Lotus nodes offer a public endpoint at no cost, with
+  custom/dedicated node options available on request. Storage onramp services
+  (Fil One, Lighthouse, Pinata, etc.) each have their own commercial pricing
+  based on storage volume. Filecoin+ (Fil+) provides verified DataCap at
+  no monetary cost — allocators grant DataCap to qualified clients, who then
+  enjoy 10x storage deal quality multiplier from miners.
+plans:
+  - name: Public (Free)
+    description: >
+      Open, unauthenticated access to the Glif public Lotus node endpoints for
+      both mainnet and Calibration testnet. Supports all read-only JSON-RPC and
+      Ethereum RPC calls plus MPoolPush and EthSendRawTransaction. Limited to
+      the most recent 2 000 blocks (~16.67 hours of chain history).
+    url: https://docs.filecoin.io/networks-and-tools/networks/mainnet/rpcs
+    price: 0
+    currency: USD
+    unit: request
+    features:
+      - Read-only Filecoin JSON-RPC API
+      - Ethereum-compatible RPC methods
+      - MPoolPush for signed transactions
+      - EthSendRawTransaction for signed transactions
+      - Mainnet and Calibration testnet access
+      - WebSocket (wss) endpoint support
+    limitations:
+      - Last 2 000 blocks only (no deep archive)
+      - No guaranteed SLA
+      - Shared public infrastructure
+
+  - name: Dedicated Node (Custom)
+    description: >
+      Custom or dedicated Glif node endpoint with advanced permission settings,
+      higher throughput, and optional archival access. Pricing and capacity
+      determined via direct engagement with Glif.
+    url: https://github.com/glifio
+    price: custom
+    currency: USD
+    unit: node
+    features:
+      - Dedicated infrastructure
+      - Advanced permission controls
+      - Optional full archival history
+      - Higher rate limits
+      - SLA negotiable
+
+  - name: Filecoin+ (Fil+) Verified Storage
+    description: >
+      Free program granting DataCap to verified clients, enabling 10x quality-
+      adjusted power multiplier on storage deals. Allocators (formerly notaries)
+      approve clients for DataCap via on-chain Verified Registry actor calls.
+      No monetary cost — requires application and verification.
+    url: https://docs.filecoin.io/storage-providers/filecoin-deals/filecoin-programs
+    price: 0
+    currency: USD
+    unit: datacap
+    features:
+      - 10x quality-adjusted power multiplier
+      - On-chain verified storage commitments
+      - Access via Verified Registry actor
+      - DataCap granted by approved allocators

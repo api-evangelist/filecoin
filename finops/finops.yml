@@ -1,0 +1,80 @@
+name: Filecoin FinOps
+description: >
+  Filecoin costs fall into two distinct categories: (1) API/RPC access costs
+  and (2) on-chain storage costs paid in FIL. The public Glif RPC endpoints
+  are free. On-chain storage deals involve FIL token payments negotiated
+  directly with storage providers (miners), with prices set by the competitive
+  open market. Filecoin+ verified deals can achieve near-zero monetary cost
+  as miners accept them to earn quality-adjusted power rewards. High-level
+  onramp services like Fil One offer flat per-terabyte pricing denominated
+  in fiat.
+costs:
+  - name: Glif Public RPC Access
+    description: Free, no-cost access to the Filecoin JSON-RPC API via Glif-hosted nodes.
+    price: 0
+    currency: USD
+    unit: request
+    notes: Shared public infrastructure; no SLA. Dedicated nodes priced on request.
+
+  - name: Filecoin Storage Deals (On-Chain)
+    description: >
+      Storage deal prices are negotiated peer-to-peer between clients and
+      storage providers in FIL per GiB per epoch. The Filecoin market has
+      driven prices extremely low — many providers accept verified (Fil+)
+      deals at effectively zero cost to gain quality-adjusted power rewards.
+      Unverified deal prices vary by provider.
+    price: market-rate
+    currency: FIL
+    unit: GiB/epoch
+    notes: >
+      1 epoch = 30 seconds. Query current asks via the /asks endpoint or
+      Filrep.io storage provider API. Verified deals via Filecoin+ program
+      are often free or near-zero.
+
+  - name: Fil One S3-Compatible Storage
+    description: >
+      Fil One provides S3-compatible object storage backed by Filecoin with
+      flat per-terabyte pricing and no egress fees.
+    price: custom
+    currency: USD
+    unit: TB/month
+    notes: >
+      See https://filecoin.io/getting-started/how-storage-works/storage-onramps
+      for current Fil One pricing and access.
+
+  - name: FVM Smart Contract Gas Fees
+    description: >
+      Interactions with Filecoin Virtual Machine (FVM) built-in actors
+      (Miner, Market, Verified Registry, etc.) require FIL gas fees.
+      Gas prices fluctuate with network demand and are denominated in
+      attoFIL (1 FIL = 10^18 attoFIL).
+    price: variable
+    currency: attoFIL
+    unit: gas-unit
+    notes: >
+      Estimate gas costs using Filecoin gas estimation RPC calls before
+      submitting transactions. See https://docs.filecoin.io/ for gas details.
+
+  - name: Dedicated Glif Node
+    description: Custom pricing for dedicated Lotus node infrastructure via Glif.
+    price: custom
+    currency: USD
+    unit: node/month
+    notes: Contact Glif at https://github.com/glifio to request a dedicated node.
+
+budgetControls:
+  - description: >
+      Monitor FIL wallet balances with the Filecoin JSON-RPC Filecoin.WalletBalance
+      method or the Filecoin Ethereum RPC eth_getBalance method before
+      initiating storage deals to avoid insufficient-funds errors.
+  - description: >
+      Use the Storage Market Actor GetBalance method to check escrow and
+      locked balances before publishing storage deals.
+  - description: >
+      Query storage provider asks via the /asks REST endpoint or Filrep.io
+      API to compare prices and select cost-optimal providers before
+      initiating deals.
+  - description: >
+      Apply for Filecoin+ DataCap at https://plus.fil.org/ to qualify for
+      the 10x deal quality multiplier, enabling near-zero-cost storage from
+      providers seeking verified deal rewards.
