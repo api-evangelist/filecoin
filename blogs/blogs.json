@@ -1,0 +1,66 @@
+{
+  "url": "https://filecoin.io/blog/rss.xml",
+  "retrieved": "2026-06-13",
+  "posts": [
+    {
+      "title": "ProPGF Batch 3: Call for Builders",
+      "url": "https://filecoin.io/blog/ProPGF-Batch-3-Call-for-Builders",
+      "date_published": "2026-06-07",
+      "summary": "Filecoin's funding initiative offers grants for teams developing customer-facing products, storage provider growth tools, and AI infrastructure solutions."
+    },
+    {
+      "title": "Announcing Filecoin ProPGF Batch 3 Selection Committee",
+      "url": "https://filecoin.io/blog/Announcing-Filecoin-ProPGF-Batch-3-Selection-Committee",
+      "date_published": "2026-05-28",
+      "summary": "A diverse group of ecosystem contributors will guide milestone-based funding decisions for core infrastructure and targeted RFP projects."
+    },
+    {
+      "title": "Filecoin's NV28 Fire Horse Network Upgrade is Here",
+      "url": "https://filecoin.io/blog/filecoins-nv28-fire-horse-network-upgrade-is-here",
+      "date_published": "2026-05-27",
+      "summary": "The mainnet upgrade enhances usability, trustworthiness, and performance for businesses executing real workloads on the network."
+    },
+    {
+      "title": "Announcing Filecoin ProPGF Batch 3: General Track",
+      "url": "https://filecoin.io/blog/Announcing-Filecoin-ProPGF-Batch-3-General-Track",
+      "date_published": "2026-05-21",
+      "summary": "A $2 million milestone-based funding round dedicated to key ecosystem focus areas within the Filecoin network."
+    },
+    {
+      "title": "Filecoin Onchain Cloud Is Live on Mainnet",
+      "url": "https://filecoin.io/blog/filecoin-onchain-cloud-is-live-on-mainnet",
+      "date_published": "2026-03-26",
+      "summary": "Verifiable, programmable storage solution featuring onchain proofs, smart contract payments, and two-copy replication for AI agents."
+    },
+    {
+      "title": "Filecoin ProPGF Batch 2 (General Track): $3.22M Allocated",
+      "url": "https://filecoin.io/blog/filecoin-propgf-batch-2-general-track-322m-allocated-to-core-infrastructure-and-ecosystem-builders",
+      "date_published": "2026-03-03",
+      "summary": "ProPGF Batch 2 selected 16 of 102 applicants, distributing $3.22 million toward core infrastructure, developer tooling, and network resilience."
+    },
+    {
+      "title": "The 2026 Filecoin Network Strategy",
+      "url": "https://filecoin.io/blog/the-2026-filecoin-network-strategy",
+      "date_published": "2026-02-19",
+      "summary": "The ecosystem pivots toward scaling demand for onchain, paid storage at an inflection point driven by AI-powered data infrastructure needs."
+    },
+    {
+      "title": "CloudPaws: Ecosystem Identity Program for Filecoin Onchain Cloud",
+      "url": "https://filecoin.io/blog/cloudpaws-establishing-the-identity-layer-for-early-contributors-to-filecoin-onchain-cloud",
+      "date_published": "2026-01-16",
+      "summary": "The program introduces 100 identity NFTs recognizing early contributors, establishing a verified community shaping the decentralized cloud."
+    },
+    {
+      "title": "Announcing Filecoin ProPGF Batch 2 Selection Committee",
+      "url": "https://filecoin.io/blog/announcing-filecoin-propgf-batch-2-selection-committee",
+      "date_published": "2026-01-15",
+      "summary": "The committee brings together experts from decentralized storage, crypto-economics, public goods funding, governance, and open source operations."
+    },
+    {
+      "title": "Filecoin News 120",
+      "url": "https://filecoin.io/blog/filecoin-news-120",
+      "date_published": "2026-01-14",
+      "summary": "Coverage of the 2025 year in review, analysis of Filecoin Onchain Cloud, and results from the FIL-RetroPGF Round 3 awards."
+    }
+  ]
+}

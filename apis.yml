@@ -95,6 +95,8 @@ apis:
         url: https://filecoin-project.github.io/filecoin-http-api/
       - type: OpenAPI
         url: https://github.com/filecoin-project/filecoin-http-api
+      - type: OpenAPI
+        url: openapi/api.yml
     contact:
       - FN: Filecoin Project
         url: https://github.com/filecoin-project
@@ -203,4 +205,5 @@ maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
 
+modified: "2026-06-13"
 specificationVersion: "0.19"

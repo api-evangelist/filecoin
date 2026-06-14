@@ -1,0 +1,67 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "filecoin": "https://filecoin.io/vocab#",
+    "api": "https://filecoin.io/api#"
+  },
+  "@type": "Organization",
+  "@id": "https://filecoin.io/",
+  "name": "Filecoin",
+  "description": "Filecoin is the world's largest decentralized storage network, providing cryptographically verifiable storage backed by a global network of storage providers.",
+  "url": "https://filecoin.io/",
+  "logo": "https://filecoin.io/favicon.ico",
+  "sameAs": [
+    "https://github.com/filecoin-project",
+    "https://github.com/glifio"
+  ],
+  "hasAPI": [
+    {
+      "@type": "WebAPI",
+      "@id": "https://api.node.glif.io/rpc/v1",
+      "name": "Filecoin Glif Lotus JSON-RPC API",
+      "description": "Public, load-balanced Lotus node endpoint hosted by Glif providing read-only access to the Filecoin mainnet JSON-RPC API.",
+      "documentation": "https://docs.filecoin.io/reference/general",
+      "protocol": "JSON-RPC",
+      "network": "mainnet"
+    },
+    {
+      "@type": "WebAPI",
+      "@id": "https://api.calibration.node.glif.io/rpc/v1",
+      "name": "Filecoin Calibration Testnet Glif API",
+      "description": "Glif-hosted public Lotus node endpoint for the Filecoin Calibration testnet.",
+      "protocol": "JSON-RPC",
+      "network": "calibration-testnet"
+    },
+    {
+      "@type": "WebAPI",
+      "@id": "https://filecoin-project.github.io/filecoin-http-api/",
+      "name": "Filecoin HTTP REST API",
+      "description": "OpenAPI-specified HTTP REST interface for Filecoin nodes, covering chain resources, actor management, payment channels, and storage deals.",
+      "documentation": "https://filecoin-project.github.io/filecoin-http-api/",
+      "termsOfService": "https://github.com/filecoin-project/filecoin-http-api",
+      "hasSpecification": {
+        "@type": "APISpecification",
+        "encodingFormat": "application/yaml",
+        "contentUrl": "https://raw.githubusercontent.com/filecoin-project/filecoin-http-api/master/api/api.yml",
+        "version": "0.1.0",
+        "specificationFormat": "OpenAPI 3.0.2"
+      }
+    },
+    {
+      "@type": "WebAPI",
+      "@id": "https://api.filrep.io/",
+      "name": "Filrep.io Storage Provider API",
+      "description": "RESTful JSON API for discovering and evaluating Filecoin storage providers (miners). Returns reputation scores, geographic distribution, pricing, and verified deal history.",
+      "documentation": "https://filrep.io/"
+    }
+  ],
+  "keywords": [
+    "Decentralized Storage",
+    "Web3",
+    "IPFS",
+    "Blockchain",
+    "Storage Deals",
+    "Filecoin+",
+    "FVM"
+  ]
+}
