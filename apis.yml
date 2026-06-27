@@ -180,15 +180,15 @@ apis:
 common:
   - type: Plans
     url: https://github.com/api-evangelist/filecoin/blob/main/plans/plans.yml
-  - type: Rate Limits
+  - type: RateLimits
     url: https://github.com/api-evangelist/filecoin/blob/main/rate-limits/rate-limits.yml
   - type: FinOps
     url: https://github.com/api-evangelist/filecoin/blob/main/finops/finops.yml
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/filecoin-project
   - type: GitHub Glif
     url: https://github.com/glifio
-  - type: Developer Documentation
+  - type: Documentation
     url: https://docs.filecoin.io/
   - type: Protocol Specification
     url: https://spec.filecoin.io/
