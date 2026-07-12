@@ -178,6 +178,10 @@ apis:
         url: https://filrep.io/
 
 common:
+  - type: DomainSecurity
+    url: security/filecoin-domain-security.yml
+  - type: Authentication
+    url: authentication/filecoin-authentication.yml
   - type: Plans
     url: https://github.com/api-evangelist/filecoin/blob/main/plans/plans.yml
   - type: RateLimits

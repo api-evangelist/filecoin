@@ -1,0 +1,16 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/api.yml
+summary:
+  types:
+  - http
+schemes:
+- name: BearerTokenAuth
+  type: http
+  scheme: Bearer Token
+  description: |-
+    The authentication scheme for this API is implementation dependent. Implementations should feel free to use the scheme and granularity they deem fit. This document describes the scheme used by the [go-filecoin](https://github.com/filecoin-project/go-filecoin) daemon.
+
+    Go-filecoin will initially (v0) support a simple all or nothing authentication and authorization suitable for use by the owner/oper
+  sources:
+  - openapi/api.yml
