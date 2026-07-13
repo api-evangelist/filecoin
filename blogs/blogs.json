@@ -9,6 +9,13 @@
       "method": "feed"
     },
     {
+      "source": "https://spec.filecoin.io/index.xml",
+      "feed_url": "https://spec.filecoin.io/index.xml",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
       "source": "https://spec.filecoin.io/",
       "feed_url": "https://spec.filecoin.io/index.xml",
       "title": "",
@@ -16,6 +23,6 @@
       "method": "discovered"
     }
   ],
-  "fetched": "2026-06-27T12:03:07Z",
-  "post_count": 10
+  "fetched": "2026-07-11T11:50:51Z",
+  "post_count": 103
 }

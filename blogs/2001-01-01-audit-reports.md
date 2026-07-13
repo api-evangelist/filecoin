@@ -1,0 +1,7 @@
+---
+title: "Audit Reports"
+url: "/appendix/audit_reports/"
+date: "2001-01-01"
+feed_url: "https://spec.filecoin.io/index.xml"
+---
+Audit Reports State reliable Theory Audit n/a Edit this section section-appendix.audit_reports Security is a critical component in ensuring Filecoin can fulfill its mission to be the storage network for humanity. In addition to robust secure development processes, trainings, theory audits, and investing in external security research, the Filecoin project has engaged reputable third party auditing specialists to ensure that the theory behind the protocol and its implementation delivers the intended value, enabling Filecoin to be a safe and secure network.
