@@ -8,6 +8,19 @@ description: >
   protocol-level actors (Miner, Market, Datacap, Verified Registry, Storage
   Power) through built-in actor methods, and offers high-level storage onramps
   such as Filecoin Onchain Cloud (Synapse SDK) and S3-compatible Fil One storage.
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 image: https://filecoin.io/favicon.ico
 tags:
   - Decentralized Storage
