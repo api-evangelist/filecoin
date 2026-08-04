@@ -1,0 +1,14 @@
+{
+  "provider": "filecoin",
+  "sources": [
+    "api.yml"
+  ],
+  "outputs": [],
+  "archived": [
+    "archived api.yml"
+  ],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
