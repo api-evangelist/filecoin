@@ -55,8 +55,6 @@ apis:
         url: https://docs.filecoin.io/reference/general
       - type: RPC-Providers
         url: https://docs.filecoin.io/networks-and-tools/networks/mainnet/rpcs
-      - type: WebSocket
-        url: wss://wss.node.glif.io/apigw/lotus/rpc/v1
     contact:
       - FN: Glif Nodes
         url: https://github.com/glifio
@@ -82,8 +80,6 @@ apis:
     properties:
       - type: Documentation
         url: https://docs.filecoin.io/networks-and-tools/networks/mainnet/rpcs
-      - type: WebSocket
-        url: wss://wss.calibration.node.glif.io/apigw/lotus/rpc/1
     contact:
       - FN: Glif Nodes
         url: https://github.com/glifio
@@ -109,7 +105,7 @@ apis:
       - type: OpenAPI
         url: https://github.com/filecoin-project/filecoin-http-api
       - type: OpenAPI
-        url: openapi/api.yml
+        url: openapi/_original/api.yml
     contact:
       - FN: Filecoin Project
         url: https://github.com/filecoin-project
