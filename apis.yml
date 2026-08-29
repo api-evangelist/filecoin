@@ -8,6 +8,17 @@ description: >
   protocol-level actors (Miner, Market, Datacap, Verified Registry, Storage
   Power) through built-in actor methods, and offers high-level storage onramps
   such as Filecoin Onchain Cloud (Synapse SDK) and S3-compatible Fil One storage.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: self-serve
