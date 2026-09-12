@@ -199,6 +199,8 @@ apis:
         url: https://filrep.io/
 
 common:
+  - type: Website
+    url: https://www.filecoin.io/
   - type: DomainSecurity
     url: security/filecoin-domain-security.yml
   - type: Authentication
