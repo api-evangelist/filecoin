@@ -115,9 +115,9 @@ apis:
       - type: Documentation
         url: https://filecoin-project.github.io/filecoin-http-api/
       - type: OpenAPI
-        url: https://github.com/filecoin-project/filecoin-http-api
-      - type: OpenAPI
         url: openapi/_original/api.yml
+      - type: OpenAPI
+        url: https://github.com/filecoin-project/filecoin-http-api
     contact:
       - FN: Filecoin Project
         url: https://github.com/filecoin-project
