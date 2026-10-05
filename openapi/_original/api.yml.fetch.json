@@ -1,0 +1,12 @@
+{
+ "url": "https://raw.githubusercontent.com/filecoin-project/filecoin-http-api/HEAD/api/api.yml",
+ "requested_url": "https://raw.githubusercontent.com/filecoin-project/filecoin-http-api/HEAD/api/api.yml",
+ "status": 200,
+ "content_type": "text/plain; charset=utf-8",
+ "bytes": 10317,
+ "sha256": "57264bb4b0f62c8e2b2be17c19491cc65c84004dd0009b703bd96f066ef2e7b5",
+ "fetched_at": "2026-10-04",
+ "fetched_by": "APIEvangelist-Harvest/1.0 (+https://apievangelist.com)",
+ "match": "byte-identical",
+ "note": "Re-fetched from the provider by verify-openapi-sources.py; the archived file is byte-identical to what the provider serves."
+}
