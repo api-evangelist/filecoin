@@ -2,8 +2,8 @@
   "repo": "filecoin",
   "feeds": [
     {
-      "source": "https://spec.filecoin.io/",
-      "feed_url": "https://spec.filecoin.io/index.xml",
+      "source": "https://filecoin.io/blog/",
+      "feed_url": "https://filecoin.io/blog/rss.xml",
       "title": "",
       "saved": 0,
       "method": "discovered"
@@ -23,6 +23,6 @@
       "method": "feed"
     }
   ],
-  "fetched": "2026-10-03T12:30:02Z",
+  "fetched": "2026-10-10T13:15:00Z",
   "post_count": 107
 }
