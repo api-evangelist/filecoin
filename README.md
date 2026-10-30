@@ -64,39 +64,126 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Filecoin is the world's largest decentralized storage network, providing
-cryptographically verifiable storage backed by a global network of storage
-providers. Developers access the network through the Glif-hosted Lotus
-JSON-RPC API, the Filecoin HTTP REST API, and built-in actor methods exposed
-via the Filecoin Virtual Machine (FVM).
+Filecoin is the world's largest decentralized storage network, providing cryptographically verifiable storage backed by a global network of storage providers. Developers can query storage deals, retrieval markets, miners, blocks, and Filecoin+ verified storage operations through the Glif-hosted Lotus JSON-RPC API and the Filecoin HTTP REST API. The network also exposes protocol-level actors (Miner, Market, Datacap, Verified Registry, Storage Power) through built-in actor methods, and offers high-level storage onramps such as Filecoin Onchain Cloud (Synapse SDK) and S3-compatible Fil One storage.
 
-## APIs
+**Areas:** Decentralized Storage · Web3 · IPFS · Blockchain · Storage Deals · Filecoin+ · FVM
 
-| API | Base URL | Description |
-|-----|----------|-------------|
-| Glif Lotus JSON-RPC (mainnet) | `https://api.node.glif.io/rpc/v1` | Full Filecoin and Ethereum-compatible RPC |
-| Glif Lotus JSON-RPC (calibration) | `https://api.calibration.node.glif.io/rpc/v1` | Testnet JSON-RPC |
-| Filecoin HTTP REST API | `http://127.0.0.1:3453/api/chain/v0` | REST interface for chain, actors, deals |
-| Protocol Actor API | via Lotus RPC | Built-in actor methods (FVM) |
-| Filecoin Onchain Cloud (Synapse) | `https://filecoin.cloud/` | Programmable on-chain storage |
-| Filrep.io Storage Provider API | `https://api.filrep.io/` | Miner reputation and discovery |
+## Filecoin on APIs.io
 
-## Resources
+Everything profiled for Filecoin is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/filecoin/](https://apis.io/providers/filecoin/)** — or go straight to one of the APIs or properties below.
 
-- [Developer Docs](https://docs.filecoin.io/)
-- [Protocol Specification](https://spec.filecoin.io/)
-- [RPC Providers](https://docs.filecoin.io/networks-and-tools/networks/mainnet/rpcs)
-- [Built-in Actor API Reference](https://docs.filecoin.io/reference/built-in-actors/protocol-api)
-- [Filecoin HTTP REST API Spec](https://filecoin-project.github.io/filecoin-http-api/)
-- [Glif GitHub](https://github.com/glifio)
-- [Filecoin Project GitHub](https://github.com/filecoin-project)
-- [Filrep.io](https://filrep.io/)
+### APIs (6)
+
+- [Filecoin Glif Lotus JSON-RPC API](https://apis.io/apis/filecoin/filecoin-glif-lotus-json-rpc-api/) — Public, load-balanced Lotus node endpoint hosted by Glif providing read-only access to the Filecoin mainnet JSON-RPC API, including all Filecoin and…
+- [Filecoin Calibration Testnet Glif API](https://apis.io/apis/filecoin/filecoin-calibration-testnet-glif-api/) — Glif-hosted public Lotus node endpoint for the Filecoin Calibration testnet. Provides the same read-only JSON-RPC surface as mainnet, including Filecoin and…
+- [Filecoin HTTP REST API](https://apis.io/apis/filecoin/filecoin-http-rest-api/) — OpenAPI-specified HTTP REST interface for Filecoin nodes, covering chain resources (tipsets, blocks, executed messages), actor management, payment channels,…
+- [Filecoin Protocol Actor API](https://apis.io/apis/filecoin/filecoin-protocol-actor-api/) — Built-in actor method interface exposed through Filecoin Virtual Machine (FVM). Covers Account, Datacap, Miner, Multisig, Storage Market, Storage Power, and…
+- [Filecoin Onchain Cloud Synapse API](https://apis.io/apis/filecoin/filecoin-onchain-cloud-synapse-api/) — High-level TypeScript SDK and API for the Filecoin Onchain Cloud — a smart-contract-based marketplace providing programmable, verifiable storage with…
+- [Filrep.io Storage Provider API](https://apis.io/apis/filecoin/filrepio-storage-provider-api/) — RESTful JSON API for discovering and evaluating Filecoin storage providers (miners). Returns reputation scores, geographic distribution, pricing, verified…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Filecoin Context](https://apis.io/jsonld/filecoin/filecoin/)
+
+#### Collections (5)
+
+Postman and Open Collection request collections.
+
+- [API Collection](https://apis.io/collections/filecoin/open-actors/)
+- [API Collection](https://apis.io/collections/filecoin/open-chain/)
+- [API Collection](https://apis.io/collections/filecoin/open-control/)
+- [API Collection](https://apis.io/collections/filecoin/open-market/)
+- [API Collection](https://apis.io/collections/filecoin/open-payment_channels/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Filecoin Authentication](https://apis.io/security/filecoin/filecoin-authentication/)
+- [Filecoin Domain Security](https://apis.io/security/filecoin/filecoin-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Plans](https://apis.io/plans/filecoin/plans/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Rate Limits](https://apis.io/rate-limits/filecoin/rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Finops](https://apis.io/finops/filecoin/finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.filecoin.io/)
+- [Documentation](https://docs.filecoin.io/)
 - [Blog](https://filecoin.io/blog/)
-- [Status](https://status.filecoin.io/)
+- [GitHub](https://github.com/filecoin-project)
 
-## Profile
+## API Evangelist rating
 
-- `apis.yml` — APIs.json 0.19 provider profile
-- `plans/plans.yml` — Pricing and plan information
-- `rate-limits/rate-limits.yml` — Rate limit details
-- `finops/finops.yml` — Cost and budget control information
+**Kin Score 23.9** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 32.2 |
+| Contract governance | 0.0 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 28.6 |
+| Access clarity | 7.9 |
+
+**Agent readiness 19.7** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | documented (partial credit) |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 16.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/filecoin/](https://apis.io/providers/filecoin/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Filecoin: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/filecoin/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
